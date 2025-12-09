@@ -6,9 +6,9 @@
 <h2>IEEE Transactions on Geoscience and Remote Sensing</h2>
 
 
-[Rong Liu](https://scholar.google.com/citations?user=pOXE8p8AAAAJ&hl=zh-CN&oi=ao)<sup>1</sup>, [Junye Liang](https://scholar.google.com/citations?hl=zh-CN&user=cQAAdBYAAAAJ)<sup>1 </sup>, [Jiaqi Yang](https://github.com/liurongwhm)<sup>2 †</sup>, [Meiqi Hu](https://scholar.google.com/citations?user=E-loHKYAAAAJ&hl=zh-CN&oi=ao)<sup>1 †</sup>, [Peng Zhu](https://scholar.google.com/citations?hl=zh-CN&user=iao5Lp0AAAAJ)<sup>3</sup>, [Liangpei Zhang](https://github.com/liurongwhm)<sup>4</sup>
+[Rong Liu](https://github.com/liurongwhm)<sup>1</sup>, [Junye Liang](https://scholar.google.com/citations?user=pOXE8p8AAAAJ&hl=zh-CN&oi=ao)<sup>1 </sup>, [Jiaqi Yang](https://scholar.google.com/citations?hl=zh-CN&user=cQAAdBYAAAAJ)<sup>2 †</sup>, [Meiqi Hu](https://scholar.google.com/citations?hl=zh-CN&user=jxyAHdkAAAAJ)<sup>1 †</sup>, [Jiang He](https://scholar.google.com/citations?hl=zh-CN&user=czAEHHoAAAAJ)<sup>3</sup>, [Peng Zhu](https://scholar.google.com/citations?hl=zh-CN&user=iao5Lp0AAAAJ)<sup>4</sup>, [Liangpei Zhang](https://scholar.google.com/citations?hl=zh-CN&user=yFEl8hcAAAAJ)<sup>5</sup>
 
-<sup>1</sup> Sun Yat-sen University, <sup>2</sup> Wuhan University,  <sup>3</sup> James Cook University, <sup>3</sup> The University of Hong Kong, <sup>4</sup> Henan Academy of Sciences.
+<sup>1</sup> Sun Yat-sen University, <sup>2</sup> University of Wisconsin-Madison,  <sup>3</sup> Technical University of Munich, <sup>4</sup> The University of Hong Kong, <sup>5</sup> Henan Academy of Sciences.
 
 <sup>†</sup> Corresponding author
 
