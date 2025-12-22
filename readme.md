@@ -1,14 +1,14 @@
 
 <div align="center">
 
-<h1>DHSnet: Dual Classification Head Self-training Network for Cross-scene Hyperspectral Image Classification</h1>
+<h1>Spectral Structure-Aware Initialization and Probability-Consistent Self-Training for Cross-scene Hyperspectral Image Classification</h1>
 
-<h2>IEEE Transactions on Geoscience and Remote Sensing</h2>
+<h2>IEEE Geoscience and Remote Sensing Letters</h2>
 
 
-[Rong Liu](https://github.com/liurongwhm)<sup>1</sup>, [Junye Liang](https://scholar.google.com/citations?user=pOXE8p8AAAAJ&hl=zh-CN&oi=ao)<sup>1 </sup>, [Jiaqi Yang](https://scholar.google.com/citations?hl=zh-CN&user=cQAAdBYAAAAJ)<sup>2 †</sup>, [Meiqi Hu](https://scholar.google.com/citations?hl=zh-CN&user=jxyAHdkAAAAJ)<sup>1 †</sup>, [Jiang He](https://scholar.google.com/citations?hl=zh-CN&user=czAEHHoAAAAJ)<sup>3</sup>, [Peng Zhu](https://scholar.google.com/citations?hl=zh-CN&user=iao5Lp0AAAAJ)<sup>4</sup>, [Liangpei Zhang](https://scholar.google.com/citations?hl=zh-CN&user=yFEl8hcAAAAJ)<sup>5</sup>
+[Junye Liang](https://scholar.google.com/citations?user=pOXE8p8AAAAJ&hl=zh-CN&oi=ao)<sup>1</sup>, [Jiaqi Yang](https://scholar.google.com/citations?hl=zh-CN&user=cQAAdBYAAAAJ)<sup>2 †</sup>, [Rong Liu](https://github.com/liurongwhm)<sup>1 †</sup>, [Quanwei Liu](https://scholar.google.com/citations?user=E-loHKYAAAAJ&hl=zh-CN&oi=ao)<sup>3</sup>, [Peng Zhu](https://scholar.google.com/citations?hl=zh-CN&user=iao5Lp0AAAAJ)<sup>4</sup>
 
-<sup>1</sup> Sun Yat-sen University, <sup>2</sup> University of Wisconsin-Madison,  <sup>3</sup> Technical University of Munich, <sup>4</sup> The University of Hong Kong, <sup>5</sup> Henan Academy of Sciences.
+<sup>1</sup> Sun Yat-sen University, <sup>2</sup> Wuhan University,  <sup>3</sup> James Cook University, <sup>4</sup> The University of Hong Kong.
 
 <sup>†</sup> Corresponding author
 
@@ -17,41 +17,42 @@
 
 # 🌞 Overview
 
-**Dual Classification Head Self-training Network (DHSnet)** is a novel framework for cross-scene HSI classification. It aligns class-wise features across domains, ensuring that the trained classifier can accurately classify TD data of different classes. We introduce a dual classification head self-training strategy for the first time in the cross-scene HSI classification field and design a self-training loss based on the prediction of the two classification heads. The proposed approach mitigates the domain gap while preventing the accumulation of incorrect pseudo-labels in the model. Additionally, we incorporate a novel central feature attention mechanism to enhance the model’s capacity to learn scene-invariant features across domains. DHSNet significantly outperforms state-of-the-art methods on three cross-scene HSI datasets, achieving 80.23±1.92% OA on the Houston dataset. </a>
+**Spectral Structure-Aware Initialization and Probability-Consistent Self-Training (S2PST)** is a novel framework for cross-scene HSI classification. The framework employs batch nuclear-norm maximization to constrain the probability responses of TD outputs, implicitly aligning feature distributions between SD and TD. To enhance the model’s robustness and spectral feature representation ability, we introduce a spectral structure-aware initialization method that integrates the strengths of traditional machine learning and deep learning. Furthermore, to mitigate the model’s bias toward SD training data, we propose a self-supervised training strategy that dynamically incorporates pseudo-labeled TD samples into the training process by comparing the similarity of high-confidence samples in the probability space between SD and TD.</a>
 
 
 <p align="center">
-<img src=/figure/DHSNet.emf width="80%">
+<img src=/figure/S2PST.png width="80%">
 </P>
 
 <div align='center'>
 
-**Figure 1. Framework of DHSnet.**
+**Figure 1. Framework of S2PST.**
 
 </div>
 <br>
 
+Extensive experiments are conducted on the Houston, HyRANK, and Pavia datasets, and compared with several state-of-the-art DA methods. The experiment results demonstrate the effectiveness of the proposed framework.
 
 
 # 📝  Citation
 If you find our paper helpful, please give a ⭐ and cite it as follows:
 ```
-@ARTICLE{11265782,
-  author={Liu, Rong and Liang, Junye and Yang, Jiaqi and Hu, Meiqi and He, Jiang and Zhu, Peng and Zhang, Liangpei},
-  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
-  title={DHSNet: Dual Classification Head Self-Training Network for Cross-Scene Hyperspectral Image Classification}, 
+@ARTICLE{11020658,
+  author={Liang, Junye and Yang, Jiaqi and Liu, Rong and Liu, Quanwei and Zhu, Peng},
+  journal={IEEE Geoscience and Remote Sensing Letters}, 
+  title={Spectral Structure-Aware Initialization and Probability-Consistent Self-Training for Cross-scene Hyperspectral Image Classification}, 
   year={2025},
-  volume={63},
+  volume={},
   number={},
-  pages={1-15},
-  keywords={Feature extraction;Adaptation models;Training;Kernel;Electronic mail;Measurement;Hyperspectral imaging;Land surface;Biological system modeling;Vectors;Central attention;cross-scene classification;domain adaptation (DA);hyperspectral image (HSI);self-training},
-  doi={10.1109/TGRS.2025.3636101}}
+  pages={1-1},
+  keywords={Feature extraction;Training;Principal component analysis;Data models;Vectors;Robustness;Hyperspectral imaging;Electronic mail;Data mining;Semantics;Hyperspectral image;Cross-scene classification;Initialization;Self-training},
+  doi={10.1109/LGRS.2025.3575600}}
   ```
 
 # 📖 Relevant Projects
 
-[1] <strong>Spectral Structure-Aware Initialization and Probability-Consistent Self-Training for Cross-Scene Hyperspectral Image Classification, GRSL, 2025</strong> | [Paper](https://ieeexplore.ieee.org/document/11020658)
-<br><em>&ensp; &ensp; &ensp; Junye Liang, Jiaqi Yang, Rong Liu, Quanwei Liu, Peng Zhu</em>
+[1] <strong>Dual Classification Head Self-training Network for Cross-scene Hyperspectral Image Classification, TGRS, 2025</strong> | [Paper](https://ieeexplore.ieee.org/document/11265782)
+<br><em>&ensp; &ensp; &ensp; Rong Liu, Junye Liang, Jiaqi Yang, Jiang He, Peng Zhu</em>
 
 [2] <strong>Hyper-LKCNet: Exploring the Utilization of Large Kernel Convolution for Hyperspectral Image Classification, JSTARS, 2025</strong> | [Paper](https://ieeexplore.ieee.org/abstract/document/11007459) | [Code](https://github.com/liurongwhm/Hyper-LKNet)
 <br><em>&ensp; &ensp; &ensp; Rong Liu, Zhilin Li, Jiaqi Yang , Jian Sun, and Quanwei Liu</em>
